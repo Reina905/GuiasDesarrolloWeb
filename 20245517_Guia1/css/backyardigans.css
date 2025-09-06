@@ -1,0 +1,20 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+body{
+    background-color: rgb(177, 250, 255);
+}
+header{
+    height: 150px;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d179eea3-8ea0-4a14-a032-d1aba12720a8/dh57sju-c354d9e4-b9f3-4a71-b51b-f0562df48bfd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QxNzllZWEzLThlYTAtNGExNC1hMDMyLWQxYWJhMTI3MjBhOFwvZGg1N3NqdS1jMzU0ZDllNC1iOWYzLTRhNzEtYjUxYi1mMDU2MmRmNDhiZmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Ap0aDk-DHhW5JFtlFpcxnOy0W_hIFhlreFDNAUmCU6Q");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;      /* Centra verticalmente */
+    justify-content: center;
+}
+
+header h1{
+    color: black;
+}
