@@ -7,14 +7,16 @@
 }
 
 body{
-    background-image: url(https://m.media-amazon.com/images/S/pv-target-images/fb1adb7c8048da3fa4835e726c6368af7ae84ae0668b2edfc9fcd6f281650242.jpg);
+    background-image: url("/GuiasDesarrolloWeb/20245517_Guia1/img/Background.png");
     font-family: "TASA Explorer", sans-serif;
-    text-transform: capitalize;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    line-height: 1.6;
 }
 
 header{
-    height: 17vh;
+    height: 110px;
     background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d179eea3-8ea0-4a14-a032-d1aba12720a8/dh57sju-c354d9e4-b9f3-4a71-b51b-f0562df48bfd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QxNzllZWEzLThlYTAtNGExNC1hMDMyLWQxYWJhMTI3MjBhOFwvZGg1N3NqdS1jMzU0ZDllNC1iOWYzLTRhNzEtYjUxYi1mMDU2MmRmNDhiZmQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Ap0aDk-DHhW5JFtlFpcxnOy0W_hIFhlreFDNAUmCU6Q);
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,4 +29,59 @@ header h1{
     color: yellow;
     font-family: "Patrick Hand", cursive;
     text-shadow: 3px 3px 10px green;
+    text-transform: capitalize;
+}
+
+section{
+    width: 75%; /*ancho*/
+    margin:20px auto; /*el auto es para que lo centre, arriba y abajo*/
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+article{
+    margin-bottom: 20px;
+}
+
+#sobre{
+    color: rgb(24, 83, 24);
+}
+
+#sipnosis{
+    color:rgb(19, 9, 135);
+}
+
+#aventuras{
+    width: 350px;
+}
+
+.imagen{
+    width: 70px;
+}
+
+table{
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+table th, td{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+table thead{
+    background-color: rgb(200, 231, 243);
+}
+
+table thead{
+    background-color: rgb(200, 243, 224);
+}
+
+table tbody{
+    text-align: left;
+}
+
+#temporadas{
+    background-color: aliceblue;
 }
