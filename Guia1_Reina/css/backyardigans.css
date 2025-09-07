@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url("/GuiasDesarrolloWeb/20245517_Guia1/img/Background.png");
+    background-image: url("/GuiasDesarrolloWeb/Guia1_Reina/img/Background.png");
     font-family: "TASA Explorer", sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body{
 
 header{
     height: 110px;
-    background-image: url("/GuiasDesarrolloWeb/20245517_Guia1/img/nubes.png");
+    background-image: url("/GuiasDesarrolloWeb/Guia1_Reina/img/nubes.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
