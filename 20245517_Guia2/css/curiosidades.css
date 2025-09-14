@@ -7,6 +7,80 @@ header{
 
 #descripcion h1{
     color: rgb(160, 100, 244);
-    font-size: 40px;
     text-decoration: underline;
+}
+
+.titulo h3{
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 2vh 3vw;
+    background-color:rgb(17, 28, 61);
+    line-height: 30px;
+    text-align: center;
+}
+
+.titulo h3:first-child{
+    margin: 0 auto;
+}
+
+.curiosidades{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.curiosidades .card{
+    width: 32.3%;
+    height: 200px;
+    margin: 10px 0.5%;
+    float: left;
+    text-align: center;
+    align-content: center;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#moon{
+    background-image: url(../img/moon.png);
+}
+
+#sade{
+    background-image: url(../img/sade.jpg);
+}
+
+#aurora{
+    background-image: url(../img/seed.png);
+}
+
+#chow{
+    background-image: url(../img/chow.jpg);
+}
+
+#pollo{
+    background-image: url(../img/mole.png);
+    color:yellow;
+}
+
+#loroco{
+    background-image: url(../img/huevo.png);
+}
+
+#pupusas{
+    background-image: url(../img/pupusa.png);
+    color: blue;
+}
+
+#juegos{
+    background-image: url(../img/juegos.jpg);
+}
+
+#nadar{
+    background-image: url(../img/nadar.jpeg);
+}
+
+#perrito{
+    background-image: url(../img/park.jpg);
 }
