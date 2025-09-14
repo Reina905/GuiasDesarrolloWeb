@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg,rgba(27, 78, 161, 1) 0%, rgba(97, 75, 171, 1) 57%, rgba(115, 8, 101, 1) 100%);
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+header{
+    background-image: url("/GuiasDesarrolloWeb/20245517_Guia2/img/tech.png");
+    height: 105vh;
+    color: white;
+    background-size: 1300px auto;
+}
+
+#navegador {
+    padding: 3vh 2.5vw;
+    /*aqui iba el degradado*/
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; 
+}
+
+#navegador > h2{
+    text-shadow: yellow 1px 0 15px;
+    font-size: 30px;
+}
+
+#nav ul {
+    justify-content: right;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#nav a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+#nav a:hover{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+    text-shadow: #ffcc00 1px 0 10px;
+}
+
+#descripcion{
+    position: relative;
+    top: 40%;
+    left: 5%;
+    line-height: 50px;
+    width: 500px;
+    overflow: auto;
+}
+
+#descripcion h1{
+    color: rgb(100, 244, 181);
+}
+
+#descripcion p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.historia article{
+    padding: 2vh 3vw;
+    margin: 20px auto;
+    width: 60%;
+    color: black;
+    background-color: rgb(156, 201, 240);
+    border-radius: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.historia article p{
+    text-align: left;
+}
+
+.historia article:nth-child(2n){
+    background-color: #98b2f5;
+}
+
+.img{
+    padding: 20px;
+    width: 80%;
+}
+
+article:last-child .img{
+    width: 40%;
+}
+
+
+
+footer{
+    background-color:#6f94f3;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 2vh;
+    font-weight: bold;
+}
