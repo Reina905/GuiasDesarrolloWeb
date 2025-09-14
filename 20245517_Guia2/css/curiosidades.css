@@ -1,0 +1,12 @@
+@import url(autobiografia.css);
+
+header{
+    background-image: url("/GuiasDesarrolloWeb/20245517_Guia2/img/neonBall.jpg");
+    position: relative;
+}
+
+#descripcion h1{
+    color: rgb(160, 100, 244);
+    font-size: 40px;
+    text-decoration: underline;
+}
