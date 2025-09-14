@@ -88,6 +88,11 @@ header{
     background-color: #98b2f5;
 }
 
+.historia article:nth-child(2n):hover{
+    background-color: #98b2f5;
+    box-shadow: 1px 3px 15px 8px #6f94f3;
+}
+
 .img{
     padding: 20px;
     width: 80%;
@@ -97,7 +102,11 @@ article:last-child .img{
     width: 40%;
 }
 
-
+.card:hover{
+    position: relative;
+    bottom: 10px;
+    box-shadow: 1px 3px 15px 8px rgb(122, 191, 219);
+}
 
 footer{
     background-color:#6f94f3;
