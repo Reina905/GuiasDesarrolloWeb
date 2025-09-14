@@ -1,8 +1,7 @@
 @import url(autobiografia.css);
 
 header{
-    background-image: url("/GuiasDesarrolloWeb/20245517_Guia2/img/neonBall.jpg");
-    position: relative;
+    background-image: url("../img/neonBall.jpg");
 }
 
 #descripcion h1{
@@ -11,7 +10,7 @@ header{
 }
 
 .titulo h3{
-    width: 50%;
+    width: 55%;
     margin: 10px auto;
     border-radius: 10px;
     color: aliceblue;
@@ -40,7 +39,6 @@ header{
     float: left;
     text-align: center;
     align-content: center;
-    border: 2px solid rgb(255, 255, 255);
 }
 
 #moon{
