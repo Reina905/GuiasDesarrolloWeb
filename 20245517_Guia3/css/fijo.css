@@ -138,3 +138,15 @@ footer{
     border-bottom: solid 2px grey;
     font-weight: bold;
 }
+
+/*Contenido de la pagina galeria*/
+#galeria .plan p{
+    text-align: center;
+    font-style: italic;
+}
+
+#galeria .plan{
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding-bottom: 1px;
+}
