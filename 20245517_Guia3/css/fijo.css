@@ -6,3 +6,71 @@
     margin: 0;
     padding: 0;
 }
+
+/*Estilos iniciales*/
+body{
+    margin: 0px;
+    background-coLor: #BBB; 
+    color: #444;
+}    
+
+h1{
+    font-size: 1.3em;
+    text-align: center;
+    color: #464d52;
+}
+
+#superior{
+    width: 100%;
+    padding: 30px 0px;
+    background-color: #464d52;
+}
+
+#encabezado{
+    margin: 0px auto;
+    width: 960px;
+}
+
+#descripcion{
+    width: 360px;
+    height: 360px;
+    background-color: #888;
+    float: left;
+}
+
+#descripcion p{
+    margin: 20px;
+    color: white;
+    font-weight: bold;
+    line-height: bold;
+    line-height: 180%;
+    text-align: justify;
+}
+
+#superior #imgDesc img{
+    float: left;
+}
+
+#superior #imgDesc{
+    overflow:hidden
+}
+
+/*Contenido principal de las paginas*/
+#contenido{
+    width: 960px;
+    margin: 0px auto;
+    clear: left;
+}
+
+/*Pie de la pagina*/
+footer{
+    text-align: center;
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 2;
+    clear: both;
+    background-color: #464d52;
+    color: white;
+    width: 100%;
+}
+
