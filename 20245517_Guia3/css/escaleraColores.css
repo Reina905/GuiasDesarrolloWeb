@@ -12,21 +12,21 @@
 
 #reina_de_diamantes {
     position: absolute;
-    left: 40px;
+    left: 38px;
     top: 110px;
     z-index: 3;
 }
 
 #rey_de_diamantes {
     position: absolute;
-    left: 60px;
-    top: 130px;
+    left: 53px;
+    top: 125px;
     z-index: 4;
 }
 
 #as_de_diamantes {
     position: absolute;
-    left: 80px;
-    top: 150px;
+    left: 69px;
+    top: 141px;
     z-index: 5; 
 }
