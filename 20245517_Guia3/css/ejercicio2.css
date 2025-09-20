@@ -10,16 +10,23 @@ body{
     text-align: justify;
 }
 
-header{
-    background: #16A085;
+header {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    background-color: #16A085;
     height: 130px;
     overflow: hidden;
+    z-index: 10; 
 }
 
 footer{
+    position: fixed;
     margin-top: 20px;
     background: #16A085;
     height: 50px;
+    bottom: 0;
+    width: 100%; 
 }
 
 header div, footer div{
@@ -41,15 +48,18 @@ h2{
 section{
     margin: 0 auto;
     width: 90%;
+    display: flex;
+    flex-wrap: wrap; /*propiedad y valor vistas en clase*/
     overflow: hidden;
     position: relative;
+    margin-top: 130px;
+    margin-bottom: 50px;
 }
 
 section article{
     font-size: 0.9rem;
     height: 340px;
     width: 32.33%;
-    float: left;
     margin: 0.5%;
     border: 2px dashed #16A085;
     padding: 1%;
@@ -72,7 +82,6 @@ footer div{
     padding-top: 1rem;
 }
 
-
 section article:nth-child(2){
     background-color: rgba(70, 130, 180, 0.9);
     /*position: absolute;
@@ -83,37 +92,3 @@ section article:nth-child(2){
     /*visibility: hidden;*/
     display: none;
 }
-
-/*Respuestas a las preguntas*/
-
-/*30.¿Esperaba que el artículo se moviera 100 pixeles a la izquierda y 50 pixeles hacia arriba? ¿Es eso
-lo que obtuvo? Pregúntese porque el artículo se movió hacia abajo y hacia la derecha con
-respecto a su posición original. 
-R// Se mueve de manera contraria (por decirlo de alguna manera), ya que con esta posición se le está 
-diciendo al elemento que se empuje a sí mismo desde la dirección especificada. Por ello, se empuja 
-desde arriba para moverse hacia abajo, y se empuja desde la izquierda para moverse hacia la derecha.*/
-
-/*31. ¿Qué ha pasado con las otras cajas? ¿Han tomado el espacio que dejo libre el segundo artículo?
-¿Por qué?
-R//No han ocupado el espacio que dejó libre la caja dos, y creo que esto sucede porque la posición en 
-la que deben basarse para moverse es la de su contenedor. Si este desapareciera, el elemento no sabría 
-hacia dónde moverse, porque su contenedor desapareció.*/
-
-/*35. ¿Qué ha pasado con las otras cajas? ¿Han ocupado el espacio que dejo disponible el segundo
-artículo?
-R// Si lo han ocupado, esto sucede porque el artículo se ha movido con base al section. Por lo que, 
-no es necesario que su propio espacio original exista y, en consecuencia, los demás articulos
-ocupan su espacio.*/
-
-/*36. A partir del comportamiento visto, explique ¿Cuáles son las diferencias entre el
-posicionamiento relativo y absoluto?
-R// El posicionamiento relativo mueve un elemento desde su posición original sin sacarlo del flujo del documento, por 
-lo que su espacio sigue reservado; en cambio, el posicionamiento absoluto lo saca completamente del flujo y lo posiciona 
-respecto al contenedor más cercano que tenga posición relativa (u otra distinta de static), sin reservar su espacio original.*/
-
-/*40. ¿Cuál es la diferencia entre ocultar los elementos
-ocupando display: none y visibility: hidden?
-R// El valor de display sí afecta el flujo de la página; por ello, si se establece como "none", el elemento desaparece por completo 
-y no ocupa espacio. En cambio, visibility no afecta al flujo del documento; si se le asigna "hidden", el elemento desaparece visualmente, 
-pero sigue estando presente en la estructura, ocupando su espacio.
-*/
