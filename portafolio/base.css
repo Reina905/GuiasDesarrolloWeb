@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "TASA Explorer", sans-serif;
+    background: #ffffff;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 245, 228, 1) 38%, rgba(255, 227, 193, 1) 66%);
+}
+
+header{
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 245, 228, 1) 38%, rgba(255, 227, 193, 1) 66%);
+}
+
+.navegacion_sitio {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.8rem;
+    background-color: #F7CA9C;
+    padding: 1rem 5rem;
+    margin-top: 0;
+}
+
+.nav ul{
+    justify-content: right;
+    list-style: none;
+    display: flex;
+    column-gap: 4vh;
+}
