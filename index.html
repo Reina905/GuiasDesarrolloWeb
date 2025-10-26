@@ -21,33 +21,33 @@
     <header>
         <div class="navegacion_sitio">
             <div class="logo">
-                <i class="fa-regular fa-address-book"></i>Portafolio <span>Estudiantil</span>
+                <span><i class="fa-regular fa-address-book"></i> Portafolio</span> Estudiantil
             </div>
 
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="index.html" class="iconos">
+                        <a href="#banner" class="iconos">
                             <i class="fa-regular fa-house"></i> Inicio
                         </a>
                     </li>
                     <li>
-                        <a href="" class="iconos">
+                        <a href="#sobre_mi" class="iconos">
                             <i class="fa-solid fa-user"></i> Sobre mi
                         </a>
                     </li>
                     <li>
-                        <a href="" class="iconos">
+                        <a href="#curso" class="iconos">
                             <i class="fa-solid fa-graduation-cap"></i> Sobre el curso
                         </a>
                     </li>
                     <li>
-                        <a href="" class="iconos">
+                        <a href="#guias" class="iconos">
                             <i class="fa-solid fa-code"></i> Guías
                         </a>
                     </li>
                     <li>
-                        <a href="" class="iconos">
+                        <a href="#foda" class="iconos">
                             <i class="fa-solid fa-award"></i> FODA
                         </a>
                     </li>
@@ -55,16 +55,24 @@
             </nav>
         </div>
 
-        <div class="banner">
-            <h1>¡Hola! Soy Reina Sosa</h1>
-            <h3>Soy estudiante de Ingeniería de Software y Negocios Digitales.</h3>
-            <p>Actualmente, estoy en mi segundo año de carrera. Identificada con el carnet
-                20245517.</p>
-            <img src="portafolio/img/yo.jpeg" alt="Imagen de mi">
+        <div id="banner">
+            <div id="img">
+                <img src="portafolio/img/yo.jpeg" alt="Imagen de mi">
+            </div>
+            <div id="intro">
+                <h1>¡Hola! Soy Reina Sosa</h1>
+                <h3>Soy estudiante de Ingeniería de Software y Negocios Digitales.</h3>
+                <p>Actualmente, estoy en mi segundo año de carrera. Identificada con el carnet
+                    20245517.</p>
+                <div id="boton_guia">
+                    <a href="#guia4">Ver la ultima guia aquí (4)</a>
+                </div>    
+            </div>
         </div>
     </header>
 
-    <section class="sobre_mi">
+    <section class="sobre_mi" id="sobre_mi">
+        <h2>Sobre mi</h2>
         <p>Nací el 10 de octubre de 2005 en San Salvador y estudié toda mi vida en el mismo colegio. En 2014 adopté a mi
             querido perrito Max, y desde ese año hasta 2021, mi papá inscribía a mi hermano y a mí en campamentos de
             verano al finalizar cada año. En 2019, me gané (por primera vez) la medalla de primer lugar en el colegio.
@@ -74,7 +82,7 @@
             experiencias que dieron inicio a una nueva etapa en mi vida.</p>
     </section>
 
-    <section class="curso">
+    <section class="curso" id="curso">
         <h2>Desarrollo Web I</h2>
         <h3 id="descripcion">Descripción</h3>
         <p>Este curso enseña los fundamentos de HTML, CSS y JavaScript para aplicaciones web atractivas, funcionales e
@@ -93,7 +101,7 @@
         </div>
     </section>
 
-    <section class="guias">
+    <section class="guias" id="guias">
         <div id="Guia1">
             <h1>Guia 1: Introducción y conceptos básicos de HTML y CSS</h1>
             <p>Descripcion: La guía aborda la estructura básica de un documento web con HTML, la aplicación de estilos
