@@ -74,12 +74,16 @@ header{
     align-items: center;      /* Centra verticalmente */
     justify-content: center;  
     gap: 6rem;                /* Espacio entre imagen y texto */
-    flex-wrap: wrap;          
+            
     text-align: left;       
 }
 
 #intro h1{
     font-size: 3.3rem;
+}
+#intro h1, #intro .especial{
+    color: white;
+    text-shadow: 3px 1px 8px rgb(212, 43, 31);
 }
 
 #intro h3{
@@ -91,14 +95,21 @@ header{
     line-height: 2.1rem;
 }
 
+#intro p{
+    margin-bottom: 2%;
+}
+
 #intro #boton_guia a{
     text-decoration: none;
-    border: solid 1px black;
+    background-color: rgba(56, 31, 8, 0.869);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 1em;
 }
 
 #banner #img img{
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #d9772c;
