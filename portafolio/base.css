@@ -131,21 +131,140 @@ header{
     transform: scale(1.05);
 }
 
-#sobre_mi{
+/* SECCIÓN SOBRE MÍ */
+#sobre_mi {
     background-color: #f4ba7f;
-    padding: 4rem 10%;
+    padding: 5rem 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre_mi .carta {
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 3rem 4rem;
+    padding-bottom: 1.7rem;
+    max-width: 900px;
+    text-align: justify;
+    box-shadow: 0 8px 22px rgba(217, 119, 44, 0.25);
+}
+
+#sobre_mi .carta h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: rgb(227, 70, 3);
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px rgba(217, 119, 44, 0.3);
+}
+
+#sobre_mi .carta p {
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* SECCIÓN CURSO */
+#curso {
+    background-color: #fff5e4;
+    padding: 5rem 10%;
     text-align: justify;
 }
 
-#sobre_mi .carta{
-    background-color: #ffffff;
-    border-radius: 2.5rem;
+#curso h2 {
     text-align: center;
+    font-size: 2.2rem;
+    color: rgb(227, 70, 3);
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px rgba(217, 119, 44, 0.3);
+}
+
+#curso h3 {
+    color: rgb(8, 67, 99);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#curso p {
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#curso .contenido ul {
+    list-style-type: circle;
+    margin-left: 2rem;
     line-height: 2rem;
-    padding: 1.5rem 5rem;
 }
 
-#sobre_mi .carta p{
-    line-height: 1.7rem;
+#curso .contenido ul li {
+    transition: color 0.3s;
 }
 
+#curso .contenido ul li:hover {
+    color: rgb(227, 70, 3);
+}
+
+
+/* SECCIÓN DE LAS GUIAS*/
+#guias{
+    padding: 5rem 10%;
+    text-align: justify;
+}
+
+#guias h1{
+    text-align: center;
+    font-size: 2.2rem;
+    color: rgb(227, 70, 3);
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px rgba(217, 119, 44, 0.3);
+}
+
+
+
+
+
+
+
+
+/* SECCIÓN FODA */
+#foda {
+    background-color: #f4ba7f;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 5rem 8%;
+}
+
+#foda .cartas_foda {
+    background-color: #fff;
+    border-radius: 1.8rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#foda .cartas_foda:hover {
+    transform: translateY(-5px);
+}
+
+#foda .cartas_foda h3 {
+    color: rgb(8, 67, 99);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+#foda .cartas_foda p {
+    line-height: 1.6rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: linear-gradient(90deg, rgba(255, 245, 228, 1) 0%, rgba(255, 227, 193, 1) 66%);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-weight: bold;
+    color: rgba(56, 31, 8, 0.9);
+    font-size: 1rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
