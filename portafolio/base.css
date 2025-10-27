@@ -264,7 +264,7 @@ header{
 }
 
 #foda .cartas_foda {
-    flex-grow: 1; /*Nuevo: crece si hay espacio extra disponible*/
+    flex-grow: 1; /*Cosas aprendidas: crece si hay espacio extra disponible*/
     flex-shrink: 1; /*se encoge si no hay espacio*/
     flex-basis: 45%; /*tamaño inicial antes de cualquier cambio*/
     display: flex;
@@ -327,8 +327,8 @@ footer {
     background-color: rgba(56, 31, 8, 0.869);
 }
 
-/*Media Query para moviles y tablets pequeñas*/
-@media screen and (max-width:480px), (min-width: 481px) and (max-width:600px){
+/*Media Query para moviles y tablets*/
+@media screen and (max-width:480px), (min-width: 481px) and (max-width:768px){
     .navegacion_sitio {
         padding: 1rem 2rem;
         flex-wrap: wrap;
@@ -374,6 +374,42 @@ footer {
     }
 
     /* Ajustes del banner */
+    #banner {
+        flex-direction: column;
+        padding: 15vh 2rem 2rem;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    #intro h1 {
+        font-size: 2rem;
+    }
+
+    #intro h3 {
+        font-size: 1.2rem;
+    }
+
+    #banner #img img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+/*Para dispositivos mas grandes que una tablet normal pero mas pequeños que una computadora*/
+@media (min-width: 769px) and (max-width:894px){
+    .navegacion_sitio{
+        font-size: 1rem;
+    }
+
+    .navegacion_sitio .nav .iconos i {
+        display: none;
+        gap: 1rem;
+    }
+
+    .navegacion_sitio .nav .iconos{
+        font-size: 1rem;
+    }
+
     #banner {
         flex-direction: column;
         padding: 15vh 2rem 2rem;
