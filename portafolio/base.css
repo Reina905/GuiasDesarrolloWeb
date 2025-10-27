@@ -252,17 +252,10 @@ header{
 }
 
 .carta_guia:hover{
-    transform: translateY(-5px);
+    transform: scale(1.01);
     transition: all 0.5s;
     background-color: rgb(252, 246, 238);
 }
-
-
-
-
-
-
-
 
 /* ===== SECCIÓN FODA ===== */
 #foda {
@@ -274,14 +267,23 @@ header{
     padding: 5rem 8%;
 }
 
-/* FODA */
 #foda .cartas_foda {
-    flex: 1 1 45%; /* ocupa casi la mitad, adaptable */
+    flex: 1 1 45%;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 1.5rem;
     padding: 2rem;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-left: 8px solid #d9772c;
+    transition: all 0.3s;
+}
+
+#foda .cartas_foda:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 #foda .cartas_foda h3 {
@@ -293,6 +295,13 @@ header{
     line-height: 1.8rem;
 }
 
+#foda .cartas_foda.fortalezas h3, #foda .cartas_foda.oportunidades h3{
+    color: rgb(14, 168, 75);
+}
+
+#foda .cartas_foda.debilidades h3, #foda .cartas_foda.amenazas h3{
+    color: rgb(192, 23, 7);
+}
 
 /* FOOTER*/
 footer {
