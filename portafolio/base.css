@@ -253,7 +253,7 @@ header{
     background-color: rgb(252, 246, 238);
 }
 
-/* ===== SECCIÓN FODA ===== */
+/*SECCIÓN FODA*/
 #foda {
     background-color: #f4ba7f;
     display: flex;
@@ -264,7 +264,9 @@ header{
 }
 
 #foda .cartas_foda {
-    flex: 1 1 45%;
+    flex-grow: 1; /*Nuevo: crece si hay espacio extra disponible*/
+    flex-shrink: 1; /*se encoge si no hay espacio*/
+    flex-basis: 45%; /*tamaño inicial antes de cualquier cambio*/
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
@@ -307,9 +309,7 @@ footer {
     box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
 }
 
-/* Agregar al final del archivo CSS, antes del media query */
-
-/* Menú hamburguesa */
+/*Diseño responsivo*/
 .menu{
     display: none;
 }
@@ -327,8 +327,8 @@ footer {
     background-color: rgba(56, 31, 8, 0.869);
 }
 
-/*Media Query para moviles*/
-@media screen and (max-width:480px){
+/*Media Query para moviles y tablets pequeñas*/
+@media screen and (max-width:480px), (min-width: 481px) and (max-width:600px){
     .navegacion_sitio {
         padding: 1rem 2rem;
         flex-wrap: wrap;
@@ -338,12 +338,10 @@ footer {
         font-size: 1rem;
     }
 
-    /* Mostrar hamburguesa */
     .hamburguesa {
         display: flex;
     }
 
-    /* Menú oculto por defecto */
     .nav {
         width: 100%;
         order: 3;
@@ -372,6 +370,7 @@ footer {
     /* Mostrar menú cuando checkbox está checked */
     .menu:checked ~ .nav ul {
         display: flex;
+        background-color: white;
     }
 
     /* Ajustes del banner */
