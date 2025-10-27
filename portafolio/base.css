@@ -67,23 +67,29 @@ header{
 }
 
 #banner {
-    padding-top: 30vh;
+    padding-top: 28vh;
     padding-left: 5rem;
     padding-right: 5rem;
     display: flex;
     align-items: center;      /* Centra verticalmente */
     justify-content: center;  
-    gap: 6rem;                /* Espacio entre imagen y texto */
-            
-    text-align: left;       
+    gap: 5rem;                /* Espacio entre imagen y texto */
+    text-align: left; 
+    text-wrap: wrap;      
 }
 
 #intro h1{
     font-size: 3.3rem;
 }
-#intro h1, #intro .especial{
+#intro h1{
     color: white;
     text-shadow: 3px 1px 8px rgb(212, 43, 31);
+}
+
+#intro .especial{
+    color: rgb(6, 135, 135);
+    text-decoration: underline;
+    text-shadow: 2px 1px 5px rgb(31, 176, 212);
 }
 
 #intro h3{
@@ -107,10 +113,14 @@ header{
     border-radius: 1em;
 }
 
+#intro #boton_guia a:hover{
+    background-color: rgb(8, 67, 99);
+}
+
 #banner #img img{
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 55%;
     object-fit: cover;
     border: 5px solid #d9772c;
     box-shadow: 0 8px 25px rgba(217, 119, 44, 0.3);
@@ -120,3 +130,22 @@ header{
 #banner #img img:hover {
     transform: scale(1.05);
 }
+
+#sobre_mi{
+    background-color: #f4ba7f;
+    padding: 4rem 10%;
+    text-align: justify;
+}
+
+#sobre_mi .carta{
+    background-color: #ffffff;
+    border-radius: 2.5rem;
+    text-align: center;
+    line-height: 2rem;
+    padding: 1.5rem 5rem;
+}
+
+#sobre_mi .carta p{
+    line-height: 1.7rem;
+}
+
