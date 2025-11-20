@@ -275,7 +275,6 @@ header{
     padding: 2rem;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-left: 8px solid #d9772c;
     transition: all 0.3s;
 }
 
