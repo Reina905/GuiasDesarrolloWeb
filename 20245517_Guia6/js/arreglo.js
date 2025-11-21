@@ -15,5 +15,35 @@ btnOrdenar.addEventListener("click", ordenarElementos);
 let arreglo = new Array();
 
 function agregarElemento(){
-    
+    const numero = parseInt(document.querySelector("#inputNumero").value);
+    //Verificando que sea un numero
+    if (isNaN(numero)){
+        alert("Debe ingresar un número válido");
+    } else {
+        //Agregamos un nuevo elemento del arreglo
+        arreglo.push(numero);
+
+        //Utilizaremos la API DOM para crear un elemento html
+        let caja = document.createElement("div"); //Creamos un elemento <div></div>
+        caja.className = "col-md-1 colum"; //Agregamos una clase al elemento <div></div>
+        let valor = document.createElement("h3"); //Creamos un elemento <h3></h3>
+        valor.textContent = numero; //Agregamos texto al elemento <h3></h3>
+        caja.appendChild(valor); //Le pasamos como hijo la etiqueta <h3></h3> a nuestro <div></div>
+
+        //Insertamos los nuevos elementos al contenedor se utiliza beforeend para insertar
+        //el nuevo elemento dentro del idContainerArreglo y despues de su ultimo hijo
+        containerArreglo.insertAdjacentElement("beforeend", caja);
+    }
+}
+
+function ordenarElementos(){
+    //Utilizaremos un for...of para recorrer el arreglo a su vez se utilizará .sort() para odenarlo
+    for (let i of arreglo.sort((a, b) => a - b)){ //puse esta funcion flecha para que ordenanra los numeros de forma correcta
+        let caja = document.createElement("div");
+        caja.className = "col-md-1 colum-green";
+        let valor = document.createElement("h3");
+        valor.textContent = i;
+        caja.appendChild(valor);
+        containerArregloOrdenado.insertAdjacentElement("beforeend", caja);
+    }
 }
