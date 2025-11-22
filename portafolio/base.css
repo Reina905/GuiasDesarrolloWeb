@@ -65,7 +65,7 @@ header{
     padding-left: 5rem;
     padding-right: 5rem;
     display: flex;
-    align-items: center;      /* Centra verticalmente */
+    align-items: center;      
     justify-content: center;  
     gap: 5rem;                /* Espacio entre imagen y texto */
     text-align: left; 
@@ -117,11 +117,6 @@ header{
     object-fit: cover;
     border: 5px solid #d9772c;
     box-shadow: 0 8px 25px rgba(217, 119, 44, 0.3);
-    transition: transform 0.3s ease;
-}
-
-#banner #img img:hover {
-    transform: scale(1.05);
 }
 
 /* SECCIÓN SOBRE MÍ */
@@ -247,12 +242,6 @@ header{
     color: rgb(227, 70, 3);
 }
 
-.carta_guia:hover{
-    transform: scale(1.01);
-    transition: all 0.5s;
-    background-color: rgb(252, 246, 238);
-}
-
 /*SECCIÓN FODA*/
 #foda {
     background-color: #f4ba7f;
@@ -275,12 +264,6 @@ header{
     padding: 2rem;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: all 0.3s;
-}
-
-#foda .cartas_foda:hover {
-    transform: scale(1.02);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 #foda .cartas_foda h3 {
