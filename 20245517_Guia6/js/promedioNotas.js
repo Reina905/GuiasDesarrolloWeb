@@ -44,13 +44,14 @@ function generarEstudiantes(){
     listado += "<ol>";
     for (let indice of arrayEstudiante){
         let nombre = indice[0];
-        let nota = indice[1];
+        let nota = parseFloat(indice[1]);
 
         //Imprimiendo lista de estudiantes
         listado += `<li><b>Nombre:</b> ${nombre} - <b>Calificación</b> ${nota}</li>`;
 
         //verificacion de calificacion mas alta
         if (nota > calificacionAlta){
+            calificacionAlta = nota;
             posicion = indice;
         }
 
